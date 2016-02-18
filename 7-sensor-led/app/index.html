@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: #e7e7e7;
+    border: black;
+    color: #505050;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:focus {outline:0;}
+
+.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+</style>
+</head>
+
+<body>
+<p>
+	<button class="button disabled" id="start-button">Start</button>
+    &nbsp &nbsp
+    <img src="icons/not-ready.png" alt="led" id="led-status"
+    height="22" width="22">
+
+    <img src="icons/not-ready.png" alt="board" id="board-status"
+    height="22" width="22" align="right">
+</p>
+
+<script src="js/index.js"></script>
+</body>
+</html>
+
