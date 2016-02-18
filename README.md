@@ -1,4 +1,6 @@
-Arduino + electron examples
+Arduino + electron examples - under construction
+
+This repo will contain demos of controlling an arduino from an electron app using johnny-five. Each demo will be installable as its own npm module. It is currently under construction!
 
 DEMO 1 switch-software: button LED on/off include picture of LED
 
