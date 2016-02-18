@@ -1,5 +1,5 @@
 {
-  "name": "switch-software",
+  "name": "electron-johnny-five-servo-example",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
@@ -11,5 +11,22 @@
   "dependencies": {
     "electron-prebuilt": "^0.36.7",
     "johnny-five": "^0.9.21"
-  }
+  },
+  "description": "An electron app using johnny-five to control a servo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofroniewn/electron-johnny-five-examples.git"
+  },
+  "keywords": [
+    "electron",
+    "app",
+    "johnny-five",
+    "arduino"
+  ],
+  "author": "Nicholas Sofroniew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sofroniewn/electron-johnny-five-examples/issues"
+  },
+  "homepage": "https://github.com/sofroniewn/electron-johnny-five-examples#readme"
 }
