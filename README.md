@@ -23,3 +23,12 @@ Set duration and frequency of pulses on DO, and loop output back into AO channel
 
 DEMO 9 sensor-log: Pulse train output + sensor display
 Set duration and frequency of pulses on DO, and loop output back into AO channel, and display results. Save indexed data of sensor and pulses to JSON file along with high resolution timestamp.
+
+npm install
+./node_modules/.bin/electron-rebuild
+
+Uncaught Error: Cannot find module '/Users/sofroniewn/github/electron-johnny-five-examples/1-led/node_modules/johnny-five/node_modules/serialport/build/Release/node-v47-darwin-x64/serialport.node'
+
+mv ./node_modules/johnny-five/node_modules/serialport/build/Release/electron-v0.36-darwin-x64/ ./node_modules/johnny-five/node_modules/serialport/build/Release/node-v47-darwin-x64/
+
+See http://meow.noopkat.com/using-node-serialport-in-an-electron-app/ for a more detailed explanation
