@@ -7,6 +7,7 @@ app.on('ready', function () {
   mainWindow = new BrowserWindow({
     height: 600,
     resizable: false,
+    title: '6-sensor-servo',
     width: 800
   })
 

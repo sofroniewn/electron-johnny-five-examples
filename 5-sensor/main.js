@@ -7,7 +7,8 @@ app.on('ready', function () {
   mainWindow = new BrowserWindow({
     height: 600,
     resizable: false,
-    width: 800
+    title: '5-sensor',
+   width: 800
   })
 
   mainWindow.loadURL('file://' + __dirname + '/app/index.html')

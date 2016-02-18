@@ -7,7 +7,8 @@ app.on('ready', function () {
   mainWindow = new BrowserWindow({
     height: 475,
     resizable: false,
-    width: 595
+    title: '2-switch',
+  width: 595
   })
 
   mainWindow.loadURL('file://' + __dirname + '/app/index.html')
