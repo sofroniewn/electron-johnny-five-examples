@@ -1,47 +1,37 @@
-var Readable = require("stream").Readable;  
-var util = require("util");  
-util.inherits(MyStream, Readable);  
+var Readable = require('stream').Readable  
+var util = require('util')  
+var five = require('johnny-five')
+
+util.inherits(MyStream, Readable)  
 function MyStream(opt) {  
-  Readable.call(this, opt);
+  Readable.call(this, opt)
 }
 MyStream.prototype._read = function() {};  
 // hook in our stream
-process.__defineGetter__("stdin", function() {  
-  if (process.__stdin) return process.__stdin;
-  process.__stdin = new MyStream();
-  return process.__stdin;
-});
+process.__defineGetter__('stdin', function() {  
+  if (process.__stdin) return process.__stdin
+  process.__stdin = new MyStream()
+  return process.__stdin
+})
 
-
-var button = document.getElementById('led-button')
-var five = require('johnny-five')
 var board = new five.Board()
-
-var src = null 
-var str = null
+var button = document.getElementById('led-button')
 var state = false
 
 board.on('ready', function() {
-  var led = new five.Led(12);
-	document.getElementById('board-status').src = "icons/ready.png"
-	button.className = "button"
-	
+  document.getElementById('board-status').src = 'icons/ready.png'
+  button.className = 'button'
+  var led = new five.Led(12)
+  
   button.addEventListener('click', function () {
-	state = !state
-	if (state) {
-		str = 'ON'
-		src = 'icons/led-on.png'
-		led.on()
-	}
-	else {
-		str = 'OFF'
-		src = 'icons/led-off.png'
-		led.off()
-	} 
-	document.getElementById('led-status').src = src
+    state = !state
+    if (state) {
+      document.getElementById('led-status').src = 'icons/led-on.png'
+      led.on()
+    }
+    else {
+      document.getElementById('led-status').src = 'icons/led-off.png'
+      led.off()
+    }
   })
-});
-
-board.on('close', function() {
-	console.log('closed')
-});
+})
