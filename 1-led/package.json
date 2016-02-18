@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "electron-prebuilt": "^0.36.7",
-    "johnny-five": "^0.9.21"
+    "johnny-five": "^0.9.23"
   },
   "description": "An electron app using johnny-five to turn an led on and off",
   "repository": {
