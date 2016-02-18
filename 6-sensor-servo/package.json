@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "electron-prebuilt": "^0.36.7",
-    "johnny-five": "^0.9.21"
+    "johnny-five": "^0.9.23",
+    "lightning-line": "0.0.13"
   },
   "description": "An electron app using johnny-five to read a sensor, plot the results and control a servo",
   "repository": {

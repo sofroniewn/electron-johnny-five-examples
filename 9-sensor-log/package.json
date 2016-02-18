@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "electron-prebuilt": "^0.36.7",
-    "johnny-five": "^0.9.21"
+    "johnny-five": "^0.9.23",
+    "lightning-line": "0.0.13",
+    "performance-now": "^0.2.0"
   },
   "description": "An electron app using johnny-five to out put a strobe pulse, read a sensor, plot the results, and log the results",
   "repository": {
