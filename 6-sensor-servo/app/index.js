@@ -1,40 +1,38 @@
-var Readable = require("stream").Readable;  
-var util = require("util");  
-util.inherits(MyStream, Readable);  
+var Readable = require('stream').Readable  
+var util = require('util')  
+var five = require('johnny-five')
+var line = require('lightning-line')
+
+util.inherits(MyStream, Readable)  
 function MyStream(opt) {  
-  Readable.call(this, opt);
+  Readable.call(this, opt)
 }
 MyStream.prototype._read = function() {};  
 // hook in our stream
-process.__defineGetter__("stdin", function() {  
-  if (process.__stdin) return process.__stdin;
-  process.__stdin = new MyStream();
-  return process.__stdin;
-});
+process.__defineGetter__('stdin', function() {  
+  if (process.__stdin) return process.__stdin
+  process.__stdin = new MyStream()
+  return process.__stdin
+})
 
+var board = new five.Board()
 
 var button = document.getElementById('start-button')
 var state = false
-
 var xCoords = new Array(300).fill(0)
 var yCoords = new Array(300).fill(0)
 var freq = 20
-
-var options = {
-   "zoom": false,
-}
-
+var i = 0
 
 var el = document.body.appendChild(document.createElement('div'))
-var line = require('lightning-line')
 var viz = new line(el, {
-   "series": yCoords,
-   "index": xCoords,
-   "xaxis": "time (s)",
-   "yaxis": "voltage (V)",
-    "thickness": [8],
-    "color": [[255, 100, 0]]
-}, [], options)
+  'series': yCoords,
+  'index': xCoords,
+  'xaxis': 'time (s)',
+  'yaxis': 'position (' + String.fromCharCode(176) + ')',
+  'thickness': [8],
+  'color': [[255, 100, 0]]
+}, [], {'zoom': false})
 
 var yDomain = [45, 135]
 var xDomain = [-5, 0]
@@ -47,29 +45,22 @@ viz.y.domain([yDomain[0] - 0.05 * ySpread, yDomain[1] + 0.05 * ySpread])
 
 viz.updateAxis()
 viz.updateData({
-    "series": yCoords,
-    "index": xCoords,
-    "thickness": [8],
-    "color": [[255, 100, 0]]
+  'series': yCoords,
+  'index': xCoords,
+  'thickness': [8],
+  'color': [[255, 100, 0]]
 })
 
-
-var five = require("johnny-five"),
-board = new five.Board();
-
-var i = 0;
-
-board.on("ready", function() {
-  document.getElementById('board-status').src = "icons/ready.png"
-  button.className = "button"
+board.on('ready', function() {
+  document.getElementById('board-status').src = 'icons/ready.png'
+  button.className = 'button'
 
   var sensor = new five.Sensor({
-    pin: "A0", 
+    pin: 'A0', 
     freq: freq, 
-	});
+  })
   
-  var servo = new five.Servo({pin: 10, startAt: 90, range: [45, 135]});
-
+  var servo = new five.Servo({pin: 10, startAt: 90, range: [45, 135]})
 
   button.addEventListener('click', function () {
     state = !state
@@ -81,7 +72,7 @@ board.on("ready", function() {
     }
   })
   
-  sensor.scale(45, 135).on("data", function (){
+  sensor.scale(45, 135).on('data', function (){
     if (state) {
       servo.to(sensor.value)
 
@@ -96,12 +87,12 @@ board.on("ready", function() {
 
       viz.updateAxis()
       viz.updateData({
-        "series": yCoords,
-        "index": xCoords,
-        "thickness": [8],
-        "color": [[255, 100, 0]]
-          })
-    i++
-  }
+        'series': yCoords,
+        'index': xCoords,
+        'thickness': [8],
+        'color': [[255, 100, 0]]
+      })
+      i++
+    }
   }) 
 })

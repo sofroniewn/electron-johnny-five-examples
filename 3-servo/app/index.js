@@ -20,8 +20,8 @@ var input = document.getElementById('position-input')
 var position = 90 
 var str = null
 var state = false
-var canvas = document.getElementById('servo-horn');
-var ctx = canvas.getContext('2d');
+var canvas = document.getElementById('servo-horn')
+var ctx = canvas.getContext('2d')
 horn(position-90, '#e7e7e7')
 
 board.on('ready', function() {
