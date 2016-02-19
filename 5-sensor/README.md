@@ -7,7 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect a potentiometer to A0
 
-<img src="./app/icons/servo.png" width="500">
+<img src="./assets/board.png" width="500">
 
 ##Setting up the code
 
@@ -54,8 +54,8 @@ After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-fi
 npm start
 ```
 
-Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Sensor values will then start being acquired and plotted to the screen using a [lighting](http://lightning-viz.org/) vizualization.
+Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Sensor values will then start being acquired and plotted to the screen using a [lightning](http://lightning-viz.org/) vizualization.
 
-<img src="../assets/5-sensor.png" width="500">
+<img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [6-sensor-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/6-sensor-servo)

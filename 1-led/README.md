@@ -7,7 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect an LED directly to pin 12
 
-<img src="./app/icons/led-on.png" width="500">
+<img src="./assets/board.png" width="500">
 
 ##Setting up the code
 
@@ -56,16 +56,16 @@ npm start
 
 You should see a screen that looks like this:
 
-<img src="../assets/1-led-disabled.png" width="500">
+<img src="./assets/screenshot-disabled.png" width="500">
 
 The **Click me!** button is currently disabled and the board status light in the top right corner is grey while the app tries to connect to the board.
 
 Once the board has been found and is ready the status light will turn green and **Click me!** button will become enabled. The screen should now look like this:
 
-<img src="../assets/1-led-ready.png" width="500">
+<img src="./assets/screenshot-ready.png" width="500">
 
 If you press **Click me!** the LED should turn on!!!
 
-<img src="../assets/1-led.png" width="500">
+<img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [2-switch](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/2-switch)

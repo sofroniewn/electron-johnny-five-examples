@@ -7,7 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect a servo motor directly to pin 10
 
-<img src="./app/icons/servo.png" width="500">
+<img src="./assets/board.png" width="500">
 
 ##Setting up the code
 
@@ -56,6 +56,6 @@ npm start
 
 Once the board has been found and the green status light in the top right has turned on, you should be able to control the servo by typing an angle into the input box in the top left corner. This servo has a range of 45° to 135°.
 
-<img src="../assets/3-servo.png" width="500">
+<img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [4-potentiometer](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/4-potentiometer)

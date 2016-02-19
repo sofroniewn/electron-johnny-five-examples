@@ -7,7 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect a loopback wire from pin 11 to A1
 
-<img src="./app/icons/servo.png" width="500">
+<img src="./assets/board.png" width="500">
 
 ##Setting up the code
 
@@ -54,8 +54,8 @@ After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-fi
 npm start
 ```
 
-Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Pin 11 will then start to output a strobe at a frequency defined by the input box. Change the value of this input to change the frequency of the pulses. The sensor values will also be acquired and plotted to the screen using a [lighting](http://lightning-viz.org/) vizualization. As long as Pin 11 is connected to A1 the orange sensor values should follow the red pulses.
+Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Pin 11 will then start to output a strobe at a frequency defined by the input box. Change the value of this input to change the frequency of the pulses. The sensor values will also be acquired and plotted to the screen using a [lightning](http://lightning-viz.org/) vizualization. As long as Pin 11 is connected to A1 the orange sensor values should follow the red pulses.
 
-<img src="../assets/8-sensor-strobe.png" width="500">
+<img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log)

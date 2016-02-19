@@ -7,7 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect an LED directly to pin 12 and a switch to pin 9
 
-<img src="./app/icons/led-on.png" width="500">
+<img src="./assets/board.png" width="500">
 
 ##Setting up the code
 
@@ -56,6 +56,6 @@ npm start
 
 Once the board has been found and the green status light in the top right has turned on, you should be able to control the LED with the switch
 
-<img src="../assets/2-switch.png" width="500">
+<img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [3-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo)
