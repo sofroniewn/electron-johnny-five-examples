@@ -58,4 +58,4 @@ Once the board has been found and the green status light in the top right has tu
 
 <img src="../assets/7-sensor-led.png" width="500">
 
-**Congrats!** Check out the next example app [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe)
+**Congrats!** Check out the next example [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe)

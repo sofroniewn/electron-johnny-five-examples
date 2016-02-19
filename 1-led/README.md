@@ -68,4 +68,4 @@ If you press **Click me!** the LED should turn on!!!
 
 <img src="../assets/1-led.png" width="500">
 
-**Congrats!** Check out the next example app [2-switch](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/2-switch)
+**Congrats!** Check out the next example [2-switch](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/2-switch)

@@ -58,4 +58,4 @@ Once the board has been found and the green status light in the top right has tu
 
 <img src="../assets/2-switch.png" width="500">
 
-**Congrats!** Check out the next example app [3-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo)
+**Congrats!** Check out the next example [3-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo)
