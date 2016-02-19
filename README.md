@@ -33,7 +33,6 @@ This app plots the values a potentiometer and turns on an LED if a voltage thres
 - [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe)
 This app allows you to output a strobe at different frequencies and plots the values of analog sensor
 
-
 - [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log)
 This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON
 
