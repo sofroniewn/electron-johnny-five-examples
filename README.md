@@ -22,15 +22,17 @@ This app allows you to control a servo motor
 This app controls a servo based on a potentiometer
 
 - [5-sensor](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/5-sensor)
-This app reads values of a potentiometer and plots them
+This app reads the values of a potentiometer and plots them
 
 - [6-sensor-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/6-sensor-servo)
-This app controls a servo based on a potentiometer and plots servo position
+This app controls a servo based on a potentiometer and plots the servo position
+
+- [7-sensor-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/7-sensor-led)
+This app plots the values a potentiometer and turns on an LED if a voltage threshold is crossed
+
+- [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe)
+This app allows you to output a strobe at different frequencies and plots the values of analog sensor
 
 
-- [7-sensor-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/7-sensor-led) This app plots the values a potentiometer and turns on an LED if a voltage threshold is crossed
-
-- [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe) This app allows you to output a strobe at different frequencies and plots the values of analog sensor
-
-
-- [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log) This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON
+- [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log)
+This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON

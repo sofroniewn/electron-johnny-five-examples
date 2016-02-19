@@ -1,11 +1,11 @@
-#3-servo
-**This app allows you to control a servo motor**
+#8-sensor-strobe
+**This app allows you to output a strobe at different frequencies and plots the values of analog sensor**
 
 ##Setting up the hardware
 
 I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this example, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
 
-Connect a servo motor directly to pin 10
+Connect a loopback wire from pin 11 to A1
 
 <img src="./app/icons/servo.png" width="500">
 
@@ -16,7 +16,7 @@ To run, first clone the repo and npm install the example directory
 
 ```
 git clone https://github.com/sofroniewn/electron-johnny-five-examples
-cd electron-johnny-five-examples/3-servo
+cd electron-johnny-five-examples/8-sensor-strobe
 npm install
 ```
 
@@ -48,14 +48,14 @@ You're now ready to run the app!
 For more information about that error and using electron with johnny-five and node-serialport in general, check out this super helpful [blog post](http://meow.noopkat.com/using-node-serialport-in-an-electron-app/) by [@noopkat](https://github.com/noopkat)
 
 ##Running the app
-After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo#setting-up-the-hardware) and the [code](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo#setting-up-the-code) you are now ready to run the app with 
+After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe#setting-up-the-hardware) and the [code](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe#setting-up-the-code) you are now ready to run the app with 
 
 ```
 npm start
 ```
 
-Once the board has been found and the green status light in the top right has turned on, you should be able to control the servo by typing an angle into the input box in the top left corner. This servo has a range of 45° to 135°.
+Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Pin 11 will then start to output a strobe at a frequency defined by the input box. Change the value of this input to change the frequency of the pulses. The sensor values will also be acquired and plotted to the screen using a [lighting](http://lightning-viz.org/) vizualization. As long as Pin 11 is connected to A1 the orange sensor values should follow the red pulses.
 
-<img src="../assets/3-servo.png" width="500">
+<img src="../assets/8-sensor-strobe.png" width="500">
 
 **Congrats!**
