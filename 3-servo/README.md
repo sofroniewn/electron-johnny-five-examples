@@ -58,4 +58,4 @@ Once the board has been found and the green status light in the top right has tu
 
 <img src="../assets/3-servo.png" width="500">
 
-**Congrats!**
+**Congrats!** Check out the next example app [4-potentiometer](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/4-potentiometer)

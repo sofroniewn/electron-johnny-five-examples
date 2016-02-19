@@ -58,4 +58,4 @@ Once the board has been found and the green status light in the top right has tu
 
 <img src="../assets/6-sensor-servo.png" width="500">
 
-**Congrats!**
+**Congrats!** Check out the next example app [7-sensor-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/7-sensor-led)

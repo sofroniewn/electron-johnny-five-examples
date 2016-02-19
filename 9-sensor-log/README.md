@@ -58,4 +58,4 @@ Once the board has been found and the green status light in the top right has tu
 
 <img src="../assets/9-sensor-log.png" width="500">
 
-**Congrats!**
+**Congrats!** You've gone through all the examples - go and build something amazing!
