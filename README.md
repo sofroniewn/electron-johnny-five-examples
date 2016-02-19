@@ -38,4 +38,4 @@ This app allows you to output a strobe at different frequencies and plots the va
 This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON
 
 ---
-<img src="./assets/setup.jpg" height="500">
+<img src="./assets/setup.png" height="500">
