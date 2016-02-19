@@ -39,4 +39,4 @@ This app allows you to output a strobe at different frequencies, plots the value
 
 ---
 ## Setup
-<img src="./assets/setup.png" width="300">
+<img src="./assets/setup.png" width="350">
