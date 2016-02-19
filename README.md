@@ -36,3 +36,6 @@ This app allows you to output a strobe at different frequencies and plots the va
 
 - [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log)
 This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON
+
+---
+<img src="./assets/setup.jpg" height="500">
