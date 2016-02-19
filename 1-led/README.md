@@ -5,7 +5,9 @@
 
 I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this example, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
 
-Connect and LED to pin 12
+Connect an LED directly to pin 12
+
+![board](./app/icons/led-on.png)
 
 
 ##Setting up the code
