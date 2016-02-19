@@ -1,34 +1,40 @@
-Arduino + electron examples - under construction
+#Electron + Johnny-Five
 
-This repo will contain demos of controlling an arduino from an electron app using johnny-five. Each demo will be installable as its own npm module. It is currently under construction!
+**This repo contains examples of controlling [hardware](http://johnny-five.io/platform-support/) from an [electron app](http://electron.atom.io/) using [johnny-five](https://johnny-five.io/).**
 
-DEMO 1 switch-software: button LED on/off include picture of LED
+If you are new to johnny-five you might first want to check out this great [nodeschool](http://nodeschool.io/) [workshop on nodebots](https://github.com/tableflip/nodebot-workshop).
 
-DEMO 2 switch-hardware: respond to hardware switch to turn LED on/off, include picture of LED
+If you are new to electron you might first want to check out this great [tutorial on making an electron app](https://medium.com/developers-writing/building-a-desktop-application-with-electron-204203eeb658).
 
-DEMO 3 servo: Servo control
-Set position in software, servo goes to that position, graphic updates
+I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for all the examples, but any of the boards supported by johnny-five should work fine.
 
-DEMO 4 servo-closedLoop: Closed-loop servo control
-Reads potentiometer value, displays position in software, servo goes to that position, graphic updates
+Each example is [npm](https://www.npmjs.com/) installable and comes with its own README.md. To get started checkout [1-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/1-led).
 
-DEMO 5 sensor: Acquiring and plot data from AO at a fixed frequency. Have start/stop button. Use a lightning visualization to display results.
+---
 
-DEMO 6 sensor-servo: Acquiring and plot data from AO at a fixed frequency. Have start/stop button. Use a lightning visualization to display results. Update servo position based on value.
+## Examples
+- [1-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/1-led)
+This app allows you to control an LED
 
-DEMO 7 sensor-led: Acquiring and plot data from AO at a fixed frequency. Have start/stop button. Use a lightning visualization to display results. Turn on LED if fixed threshold crossed. Include picture of icon of LED turning on / off
+- [2-switch](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/2-switch)
+This app controls and LED based on an external switch
 
-DEMO 8 sensor-strobe: Pulse train output + sensor display
-Set duration and frequency of pulses on DO, and loop output back into AO channel, and display results
+- [3-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/3-servo)
+This app allows you to control a servo motor
 
-DEMO 9 sensor-log: Pulse train output + sensor display
-Set duration and frequency of pulses on DO, and loop output back into AO channel, and display results. Save indexed data of sensor and pulses to JSON file along with high resolution timestamp.
+- [4-potentiometer](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/4-potentiometer)
+This app controls a servo based on an external potentiometer
 
-npm install
-./node_modules/.bin/electron-rebuild
+- [5-sensor](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/5-sensor)
+This app reads the values of an analog sensor and plots them
 
-Uncaught Error: Cannot find module '/Users/sofroniewn/github/electron-johnny-five-examples/1-led/node_modules/johnny-five/node_modules/serialport/build/Release/node-v47-darwin-x64/serialport.node'
+- [6-sensor-servo](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/6-sensor-servo)
+This app reads and plots the values of analog sensor and controls a servo motor based on  them
 
-mv ./node_modules/johnny-five/node_modules/serialport/build/Release/electron-v0.36-darwin-x64/ ./node_modules/johnny-five/node_modules/serialport/build/Release/node-v47-darwin-x64/
 
-See http://meow.noopkat.com/using-node-serialport-in-an-electron-app/ for a more detailed explanation
+- [7-sensor-led](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/7-sensor-led) This app reads and plots the values of analog sensor and turns on an LED if a threshold is crossed
+
+- [8-sensor-strobe](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/8-sensor-strobe) This app allows you to output a strobe at different frequencies and reads and plots the values of analog sensor.
+
+
+- [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log) This app allows you to output a strobe at different frequencies, reads and plots the values of analog sensor, and logs timestamped information about their values as JSON
