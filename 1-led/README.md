@@ -64,8 +64,8 @@ Once the board has been found and is ready the status light will turn green and 
 
 <img src="../assets/1-led-ready.png" width="500">
 
-If you press **Click me!** the LED should turn on and the screen should change to this:
+If you press **Click me!** the LED should turn on!!!
 
 <img src="../assets/1-led-on.png" width="500">
 
-**Congrats!!!**
+**Congrats!**
