@@ -7,8 +7,7 @@ I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) fo
 
 Connect an LED directly to pin 12
 
-![board](./app/icons/led-on.png =500x)
-
+<img src="./app/icons/led-on.png" width="500">
 
 ##Setting up the code
 
@@ -57,14 +56,14 @@ npm start
 
 You should see a screen that looks like this:
 
-![1-led-disabled](../assets/1-led-disabled.png =500x)
+<img src="../assets/1-led-disabled.png" width="500">
 
 The Click me! button is currently disabled and the status light in the top right corner is grey as the app searches for board.
 
 Once the board is ready the status light will turn green and button will become enabled. The screen should now look like this:
 
-![1-led-disabled](../assets/1-led-ready.png =500x)
+<img src="../assets/1-led-ready.png" width="500">
 
 If you click the button the LED should turn on!
 
-![1-led-disabled](../assets/1-led-on.png =500x)
+<img src="../assets/1-led-on.png" width="500">
