@@ -57,6 +57,14 @@ npm start
 
 You should see a screen that looks like this:
 
+![1-led-disabled](../assets/1-led-disabled.png)
 
+The Click me! button is currently disabled and the status light in the top right corner is grey as the app searches for board.
+
+Once the board is ready the status light will turn green and button will become enabled. The screen should now look like this:
+
+![1-led-disabled](../assets/1-led-ready.png)
 
 If you click the button the LED should turn on!
+
+![1-led-disabled](../assets/1-led-on.png)
