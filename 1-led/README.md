@@ -1,8 +1,9 @@
 #1-led
+**This app allows you to control an LED**
 
 ##Setting up the hardware
 
-I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this the examples, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
+I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this example, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
 
 Connect and LED to pin 12
 
@@ -18,7 +19,7 @@ cd electron-johnny-five-examples/1-led
 npm install
 ```
 
-Unfortunately the serial port may not work right away and needs to be rebuilt
+Unfortunately the serial port may not work right away and might need to be rebuilt
 
 ```
 ./node_modules/.bin/electron-rebuild
@@ -43,10 +44,10 @@ mv ./node_modules/johnny-five/node_modules/serialport/build/Release/electron-v0.
 
 You're now ready to start the app!
 
-For more information about this error and using electron with johnny-five and node-serialport in general, check out this super helpful [blog post](http://meow.noopkat.com/using-node-serialport-in-an-electron-app/) by [@noopkat](https://github.com/noopkat)
+For more information about that error and using electron with johnny-five and node-serialport in general, check out this super helpful [blog post](http://meow.noopkat.com/using-node-serialport-in-an-electron-app/) by [@noopkat](https://github.com/noopkat)
 
 ##Running the app
-After setting up the hardware and code you are now ready to run the app with
+After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/1-led#setting-up-the-hardware) and [code](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/1-led#setting-up-the-code) you are now ready to start the app. Run 
 
 ```
 npm start
