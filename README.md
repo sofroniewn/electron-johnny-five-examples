@@ -1,6 +1,6 @@
 #Electron + Johnny-Five
 
-**This repo contains examples of [electron apps](http://electron.atom.io/) that control [hardware](http://johnny-five.io/platform-support/) using [johnny-five](http://johnny-five.io/).**
+**This repo contains examples of [electron apps](http://electron.atom.io/) that control [hardware](http://johnny-five.io/platform-support/) using [johnny-five](http://johnny-five.io/) and visualize the results using [lightning](http://lightning-viz.org/).**
 
 If you are new to johnny-five, you might want to first check out this great [nodeschool](http://nodeschool.io/) [workshop on nodebots](https://github.com/tableflip/nodebot-workshop). If you are new to electron you might want to first check out this great [tutorial on making an electron app](https://medium.com/developers-writing/building-a-desktop-application-with-electron-204203eeb658).
 
