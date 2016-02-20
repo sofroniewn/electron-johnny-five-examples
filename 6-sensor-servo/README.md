@@ -1,5 +1,5 @@
 #6-sensor-servo
-**This app controls a servo based on a potentiometer and plots the servo position**
+**This app controls a servo based on a potentiometer and plots the servo position using [lightning](http://lightning-viz.org/)**
 
 ##Setting up the hardware
 

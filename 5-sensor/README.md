@@ -1,5 +1,5 @@
 #5-sensor
-**This app reads the values of a potentiometer and plots them**
+**This app reads the values of a potentiometer and plots them using [lightning](http://lightning-viz.org/)**
 
 ##Setting up the hardware
 
