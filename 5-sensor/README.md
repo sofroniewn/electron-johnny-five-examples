@@ -5,6 +5,14 @@
 
 I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this example, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
 
+First you need to make sure the [StandardFirmata](https://github.com/firmata/protocol) firmware is running on the board
+
+- Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+- Plug in your Arduino or Arduino compatible microcontroller via USB
+- Open the Arduino IDE, select: File > Examples > Firmata > StandardFirmata
+- Click the "Upload" button
+- If the upload was successful, the board is now prepared and you can close the Arduino IDE
+
 Connect a potentiometer to A0
 
 <img src="./assets/board.png" width="500">
