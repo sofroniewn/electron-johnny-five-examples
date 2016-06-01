@@ -87,7 +87,7 @@ board.on('ready', function() {
 
   var sensor = new five.Sensor({
     pin: 'A0', 
-    freq: 20, 
+    freq: 10, 
   })
   
   button.addEventListener('click', function () {
