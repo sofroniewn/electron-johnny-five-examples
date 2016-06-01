@@ -36,6 +36,10 @@ This app allows you to output a strobe at different frequencies and plots the va
 - [9-sensor-log](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/9-sensor-log)
 This app allows you to output a strobe at different frequencies, plots the values of analog sensor, and logs timestamped information as JSON
 
+- [10-vr](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/10-vr)
+**This app reads the values of a potentiometer and uses it to control left right position in a 3D environment made using [regl](https://github.com/mikolalysenko/regl)**
+
+
 ---
 ## Setup
 <img src="./assets/setup.png" width="350"><img src="./assets/demo.gif" width="350">
