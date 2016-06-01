@@ -1,0 +1,42 @@
+{
+  "name": "electron-johnny-five-vr-example",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.1.3"
+  },
+  "dependencies": {
+    "electron": "^0.4.1",
+    "electron-prebuilt": "^0.36.7",
+    "gl-mat4": "^1.1.4",
+    "johnny-five": "^0.9.23",
+    "lookat-camera": "^1.0.0",
+    "primitive-icosphere": "^1.0.2",
+    "regl": "^0.5.0"
+  },
+  "description": "An electron app using johnny-five to read a sensor and control position in VR",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofroniewn/electron-johnny-five-examples.git"
+  },
+  "keywords": [
+    "electron",
+    "app",
+    "johnny-five",
+    "arduino"
+  ],
+  "author": "Nicholas Sofroniew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sofroniewn/electron-johnny-five-examples/issues"
+  },
+  "homepage": "https://github.com/sofroniewn/electron-johnny-five-examples#readme"
+}
