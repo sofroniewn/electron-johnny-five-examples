@@ -63,3 +63,6 @@ npm start
 ```
 
 Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Sensor values will then start being acquired and used to control your left right position in a simple 3D world made using [regl](https://github.com/mikolalysenko/regl). Your forward velocity happens at a constant rate
+
+<img src="./assets/screenshot.png" width="500">
+

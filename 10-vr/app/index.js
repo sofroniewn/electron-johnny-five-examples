@@ -8,6 +8,7 @@ const mat4 = require('gl-mat4')
 const sphere = require('primitive-icosphere')
 const regl = require('regl')(canvas)
 const camera = require('lookat-camera')(canvas)
+const normals = require('angle-normals')
 
 
 util.inherits(MyStream, Readable)  
@@ -36,8 +37,14 @@ const cube = regl({
   frag: `
     precision mediump float;
     uniform vec3 color;
+    uniform vec3 light;
+    varying vec3 vnormal;
+    varying vec3 vposition;
     void main () {
-      gl_FragColor = vec4(color, 1.0);
+      vec3 direction = normalize(light - vposition);
+      vec3 normal = normalize(vnormal);
+      float power = max(0.0, dot(direction, vnormal));
+      gl_FragColor = vec4(mix(vec3(power, power, power), color, 0.7), 1.0);
     }`,
   vert: `
     precision mediump float;
@@ -45,19 +52,26 @@ const cube = regl({
     uniform mat4 model;
     uniform mat4 view;
     attribute vec3 position;
+    attribute vec3 normal;
+    varying vec3 vnormal;
+    varying vec3 vposition;
     void main () {
+      vnormal = normal;
+      vposition = position;
       gl_Position = proj * view * model * vec4(position, 1.0);
       gl_PointSize = 10.0;
     }`,
   attributes: {
-    position: regl.buffer(mesh.positions)
+    position: regl.buffer(mesh.positions),
+    normal: regl.buffer(mesh.normals)
   },
   elements: regl.elements(mesh.cells),
   uniforms: {
     proj: mat4.perspective([], Math.PI / 2, window.innerWidth / window.innerHeight, 0.01, 1000),
     model: regl.prop('model'),
     view: regl.prop('view'),
-    color: regl.prop('color')
+    color: regl.prop('color'),
+    light: regl.prop('light')
   }
 })
 
@@ -66,7 +80,6 @@ var left = mat4.scale(mat4.identity([]), mat4.translate(mat4.identity([]), mat4.
 var right = mat4.scale(mat4.identity([]), mat4.translate(mat4.identity([]), mat4.identity([]), [50, 200, 0]), [scale, scale, scale])
 var latPos = 0
 var forPos = 0
-
 
 board.on('ready', function() {
   document.getElementById('board-status').src = 'icons/ready.png'
@@ -110,10 +123,12 @@ board.on('ready', function() {
     cube([{
       view: camera.view(),
       color: [1, 0, 0],
+      light: [10, -10, 5],
       model: left
     }, {
       view: camera.view(),
       color: [0, 0, 1],
+      light: [-10, -10, 5],
       model: right
     }])
   })
