@@ -1,7 +1,8 @@
-#10-VR
+# 10-VR
+
 **This app reads the values of a potentiometer and uses it to control left right position in a 3D environment made using [regl](https://github.com/mikolalysenko/regl)**
 
-##Setting up the hardware
+## Setting up the hardware
 
 I used an [arduino mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) for this example, but any of the [boards](http://johnny-five.io/platform-support/) supported by johnny-five should work.
 
@@ -17,8 +18,7 @@ Connect a potentiometer to A0
 
 <img src="./assets/board.png" width="500">
 
-##Setting up the code
-
+## Setting up the code
 
 To run, first clone the repo and npm install the example directory
 
@@ -55,8 +55,9 @@ You're now ready to run the app!
 
 For more information about that error and using electron with johnny-five and node-serialport in general, check out this super helpful [blog post](http://meow.noopkat.com/using-node-serialport-in-an-electron-app/) by [@noopkat](https://github.com/noopkat)
 
-##Running the app
-After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/10-vr#setting-up-the-hardware) and the [code](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/10-vr#setting-up-the-code) you are now ready to run the app with 
+## Running the app
+
+After setting up the [hardware](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/10-vr#setting-up-the-hardware) and the [code](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/10-vr#setting-up-the-code) you are now ready to run the app with
 
 ```
 npm start
@@ -65,4 +66,3 @@ npm start
 Once the board has been found and the green status light in the top right has turned on, you should be able to click the **start** button in the top left corner. Sensor values will then start being acquired and used to control your left right position in a simple 3D world made using [regl](https://github.com/mikolalysenko/regl). Your forward velocity happens at a constant rate
 
 <img src="./assets/screenshot.png" width="500">
-

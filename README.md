@@ -1,4 +1,4 @@
-#Electron + Johnny-Five
+# Electron + Johnny-Five
 
 **This repo contains examples of [electron apps](http://electron.atom.io/) that control [hardware](http://johnny-five.io/platform-support/) using [johnny-five](http://johnny-five.io/) and visualize the results using [lightning](http://lightning-viz.org/).**
 
@@ -41,5 +41,6 @@ This app reads the values of a potentiometer and uses it to control left right p
 
 
 ---
+
 ## Setup
 <img src="./assets/setup.png" width="350"><img src="./assets/demo.gif" width="350">
